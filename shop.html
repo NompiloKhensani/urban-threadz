@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Urban Threadz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <span class="urban">URBAN</span>
+          <span class="threadz">THREADZ</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="cart.html">Cart<span class="cart-count">0</span>
+          </a>
+          <span id="user-email"></span>
+          <a href="login.html" class="login-btn" id="auth-link">Login</a>
+          <button id="theme-toggle" class="theme-toggle" type="button">
+            ☀️
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="shop-title">Shop All Things Urban</h1>
+
+      <div class="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search products..."
+        />
+      </div>
+
+      <div id="products"></div>
+    </main>
+
+    <script type="module" src="app.js"></script>
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Urban Threadz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <span class="urban">Urban</span>
+          <span class="threadz">Threadz</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="cart.html">Cart<span class="cart-count">0</span> </a>
+          <span id="user-email"></span>
+          <a href="login.html" class="login-btn active" id="auth-link">Login</a>
+
+          <button id="theme-toggle" class="theme-toggle" type="button">
+            ☀️
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Welcome to Urban Threadz</h1>
+
+      <form id="auth-form">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit" id="login-btn">Login</button>
+        <button type="button" id="signup-btn">Create Account</button>
+      </form>
+
+      <p id="auth-message"></p>
+    </main>
+
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>

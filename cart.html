@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Urban Threadz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <span class="urban">Urban</span>
+          <span class="threadz">Threadz</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="cart.html" class="active">Cart<span class="cart-count">0</span> </a>
+          <span id="user-email"></span>
+          <a href="login.html" class="login-btn" id="auth-link"></a>
+
+          <button id="theme-toggle" class="theme-toggle" type="button">
+            ☀️
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <section class="cart-section">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+      </section>
+
+      <aside class="order-summary">
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+          <span>Items</span>
+          <span id="summary-items">0</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="summary-subtotal">R0.00</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span id="summary-shipping">R0.00</span>
+        </div>
+
+        <div class="summary-total">
+          <span>TOTAL</span>
+          <span id="summary-total">R0.00</span>
+        </div>
+
+        <button id="checkout-btn">Checkout</button>
+      </aside>
+    </main>
+
+    <script type="module" src="cart.js"></script>
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>
